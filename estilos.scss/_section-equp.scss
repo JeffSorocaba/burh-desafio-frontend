@@ -1,0 +1,98 @@
+
+
+section {
+    background-color: $colorbg;
+    h3 {
+		@include Font(center, $font-color, 40px, light);
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		width: 300px;
+		margin: auto;
+		border-top: 1px solid $color-top;
+	}
+}
+
+#hcg-slider-1
+{
+	background-color: #fff;
+	width: 95%;
+	height: 600px;
+	margin: auto;
+	border-radius: .5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hcg-slide-dot-control {
+	padding-bottom: 20px;
+}
+
+#hcg-slider-1 .hcg-slide-container {
+	width: 800px;
+	height: 400px;
+    padding: 30px;
+}
+.hcg-slider-body {
+	height: 100%;
+	width: 100%;
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	width: 100%;
+	height: 100%;
+	display: none;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	// border: solid 1px #a0a0a0;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}
+.hcg-slide-dot-control {
+	margin-top: 10px;
+	text-align: center;
+}
+.hcg-slide-dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.hcg-slide-dot.dot-active {
+	background-color: #717171;
+}
+/************CSS Animation***********/
+
+.animated { 
+	animation-name: fadeInUp; 
+	animation-duration: 1s;
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.fadeInUp {
+	animation-name: fadeInUp;
+}

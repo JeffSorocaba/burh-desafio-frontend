@@ -1,0 +1,36 @@
+
+footer {
+    background-color: $colorbg;
+    display: flex;
+    flex-direction: column;
+
+    @media ($telaspequenas) {
+        align-items: center;
+        address {
+            padding: 20px;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+        }
+    }
+
+    .fim {
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 200px;
+        h5 {
+            @include Font(left, #fff, 30px, bold)
+        }
+        p {
+            @include Font(left, #fff, 18px, bold)
+        }
+    }
+    .redes {
+        margin-left: 200px;
+        .dev {
+            @include Font(left, #fff, 18px, bold);
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

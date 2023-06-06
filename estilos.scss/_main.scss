@@ -1,0 +1,93 @@
+
+@mixin Font($position, $color, $f-s, $f-w) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: $position;
+    color: $color;
+    font-size: $f-s;
+}
+
+main {
+    background-color: $colorbg;
+    text-align: center;
+    padding-bottom: 40px;
+    img.logo-main {
+        margin: 50px;
+    }
+    .conteiner {
+        width: 95%;
+        margin: auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+
+        .text-img {
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            @include Font( justify, rgb(24, 24, 24), 20px, light);
+            line-height: 1.7em;
+            // border-bottom: solid black 1px;
+            // border-left: 1px solid #000;
+            .par-serv {
+                text-align: left;
+            }
+
+            @media ($telaspequenas) {
+                flex-direction: column;
+                width: $width-responsivo;
+                .img-serv {
+                    width: $width-responsivo;
+                    border-radius: $border-radios-responsivo;
+                }
+                .par-serv {
+                    color: $color-paragrafo-responsivo;
+                    background-color: $color-bgc-responsivo;
+                }
+                .unico {
+                    // text-align: center;
+                    padding-right: 200px;
+                }
+                .subtitle-serv {
+                    color: $color-paragrafo-responsivo;
+                    background-color: $color-bgc-responsivo;
+                }
+            }
+            .unico {
+                text-align: right;
+            }
+        }
+
+        @media ($telaspequenas) {
+            .reverso {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        .img-serv {
+            // width: 550px;
+            width: 50%;
+            padding: 15px;
+            border-radius: 50px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .div-section {
+            padding: 15px;
+            .subtitle-serv {
+            padding-bottom: 20px;
+            }
+
+            @media ($telaspequenas) {
+                background: url(../imagens/Pink\ Retro\ Neon\ Line\ Dumbbell\ Icon\ by\ dylanxh\ _\ Redbubble.png) center repeat;
+                background-attachment: fixed;
+                background-size: auto;
+                border-radius: 3px;
+            }
+        }
+    }
+}

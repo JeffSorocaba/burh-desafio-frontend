@@ -1,0 +1,43 @@
+$colorbg: rgb(51, 51, 51);
+$font-color: rgb(6, 6, 6);
+$color-top: rgb(26, 26, 26);
+$color-paragrafo-responsivo: rgb(217, 217, 217);
+$color-bgc-responsivo: rgba(41, 41, 41, 0.218);
+$width-responsivo: 80%;
+$border-radios-responsivo: 10%;
+$fontprincpal: Verdana, Geneva, Tahoma, sans-serif;
+$telaspequenas: "max-width: 640px";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.apenas-celular{
+    @media(min-width: 641px) {
+        display: none !important;   
+    }
+}
+
+.apenas-desktop{
+    @media($telaspequenas) {
+        display: none !important;   
+    }
+}
+
+@mixin hover-effect {
+    &:hover {
+        border-radius: 5px 15px;
+        transition-duration: .3s;
+        background-color: brown;
+        color: $color-paragrafo-responsivo;
+        letter-spacing: .2em;
+        text-decoration: overline;
+    }
+}
+  
+
+@import 'header';
+@import 'main';
+@import 'section-equp';
+@import 'section-position';
+@import 'footer'
