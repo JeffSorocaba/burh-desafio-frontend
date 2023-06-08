@@ -1,4 +1,10 @@
+function cliqueAqui() {
+    document.getElementById("enviar")
+};
 
+function enviar() {
+    document.getElementById("enviado").innerHTML = 'Cadastro realizado com sucesso!'
+};
 
 (() => {
 //If you want to add more images, add the link name and URL image URL in the array list below.
