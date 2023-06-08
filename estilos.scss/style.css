@@ -48,7 +48,7 @@ header nav .cadastro button {
 header nav .cadastro button:hover:hover {
   border-radius: 5px 15px;
   transition-duration: 0.3s;
-  background-color: brown;
+  background-color: #A52A2A;
   color: rgb(217, 217, 217);
   letter-spacing: 0.2em;
   text-decoration: overline;
@@ -59,9 +59,6 @@ header nav .logo {
 @media (max-width: 640px) {
   header nav .position-nav {
     display: none;
-  }
-  header nav img.apenas-celular {
-    cursor: pointer;
   }
 }
 header nav ul {
@@ -89,7 +86,7 @@ header nav ul li a {
 }
 
 main {
-  background-color: rgb(51, 51, 51);
+  background-color: #A52A2A;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -129,16 +126,8 @@ main .conteiner .text-img .par-serv {
     width: 80%;
     border-radius: 10%;
   }
-  main .conteiner .text-img .par-serv {
-    color: rgb(217, 217, 217);
-    background-color: rgba(41, 41, 41, 0.218);
-  }
   main .conteiner .text-img .unico {
     padding-right: 200px;
-  }
-  main .conteiner .text-img .subtitle-serv {
-    color: rgb(217, 217, 217);
-    background-color: rgba(41, 41, 41, 0.218);
   }
 }
 main .conteiner .text-img .unico {
@@ -153,11 +142,12 @@ main .conteiner .text-img .unico {
 main .conteiner .img-serv {
   width: 50%;
   padding: 15px;
-  border-radius: 50px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  -webkit-clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
+          clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
 }
 main .conteiner .div-section {
   padding: 15px;
@@ -165,17 +155,9 @@ main .conteiner .div-section {
 main .conteiner .div-section .subtitle-serv {
   padding-bottom: 20px;
 }
-@media (max-width: 640px) {
-  main .conteiner .div-section {
-    background: url(../imagens/Pink\ Retro\ Neon\ Line\ Dumbbell\ Icon\ by\ dylanxh\ _\ Redbubble.png) center repeat;
-    background-attachment: fixed;
-    background-size: auto;
-    border-radius: 3px;
-  }
-}
 
 section {
-  background-color: rgb(51, 51, 51);
+  background-color: #A52A2A;
 }
 section h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -283,7 +265,7 @@ section h3 {
 
 .position {
   padding-top: 70px;
-  background-color: rgb(51, 51, 51);
+  background-color: #A52A2A;
 }
 .position .instrutores {
   border-top: 2px solid rgb(26, 26, 26);
@@ -397,7 +379,7 @@ section h3 {
 }
 
 footer {
-  background-color: rgb(51, 51, 51);
+  background-color: #A52A2A;
   display: flex;
   flex-direction: column;
 }
@@ -439,4 +421,47 @@ footer .redes .dev {
 }
 footer .redes .dev a {
   color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url(../imagens/academia_00102073.jpg) left no-repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(6, 6, 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container .formulario {
+  width: 65%;
+  padding: 15px;
+  background-color: rgba(255, 109, 5, 0.9137254902);
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.container .formulario .div {
+  padding-bottom: 15px;
+}
+.container .formulario .fieldset {
+  padding-bottom: 15px;
+  border: 1px solid white;
+}
+.container .formulario .fieldset--position {
+  display: flex;
+  flex-direction: column;
+}
+.container .formulario .fieldset--position .label--dados {
+  padding: 5px 30px;
+}
+.container .formulario .fieldset--position .label--dados input {
+  height: 25px;
+  border: none;
+}
+.container .formulario .legend {
+  font-weight: 600;
+  letter-spacing: 0.2em;
 }/*# sourceMappingURL=style.css.map */

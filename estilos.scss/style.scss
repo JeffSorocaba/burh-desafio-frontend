@@ -1,6 +1,7 @@
-$colorbg: rgb(51, 51, 51);
+$colorbg: #A52A2A;
 $font-color: rgb(6, 6, 6);
 $color-top: rgb(26, 26, 26);
+$colorbg-transparencia: #ff6d05e9;
 $color-paragrafo-responsivo: rgb(217, 217, 217);
 $color-bgc-responsivo: rgba(41, 41, 41, 0.218);
 $width-responsivo: 80%;
@@ -28,7 +29,7 @@ $telaspequenas: "max-width: 640px";
     &:hover {
         border-radius: 5px 15px;
         transition-duration: .3s;
-        background-color: brown;
+        background-color: $colorbg;
         color: $color-paragrafo-responsivo;
         letter-spacing: .2em;
         text-decoration: overline;

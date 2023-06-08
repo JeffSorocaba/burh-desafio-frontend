@@ -43,17 +43,8 @@ main {
                     width: $width-responsivo;
                     border-radius: $border-radios-responsivo;
                 }
-                .par-serv {
-                    color: $color-paragrafo-responsivo;
-                    background-color: $color-bgc-responsivo;
-                }
                 .unico {
-                    // text-align: center;
                     padding-right: 200px;
-                }
-                .subtitle-serv {
-                    color: $color-paragrafo-responsivo;
-                    background-color: $color-bgc-responsivo;
                 }
             }
             .unico {
@@ -72,9 +63,9 @@ main {
             // width: 550px;
             width: 50%;
             padding: 15px;
-            border-radius: 50px;
             object-fit: cover;
             object-position: top;
+            clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
         }
         .div-section {
             padding: 15px;
@@ -82,12 +73,12 @@ main {
             padding-bottom: 20px;
             }
 
-            @media ($telaspequenas) {
-                background: url(../imagens/Pink\ Retro\ Neon\ Line\ Dumbbell\ Icon\ by\ dylanxh\ _\ Redbubble.png) center repeat;
-                background-attachment: fixed;
-                background-size: auto;
-                border-radius: 3px;
-            }
+            // @media ($telaspequenas) {
+            //     background: url(../imagens/Pink\ Retro\ Neon\ Line\ Dumbbell\ Icon\ by\ dylanxh\ _\ Redbubble.png) center repeat;
+            //     background-attachment: fixed;
+            //     background-size: auto;
+            //     border-radius: 3px;
+            // }
         }
     }
 }
