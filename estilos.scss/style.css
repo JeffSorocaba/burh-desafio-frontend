@@ -85,6 +85,69 @@ header nav ul li a {
   align-items: center;
 }
 
+dialog::backdrop {
+  background-color: rgba(203, 20, 20, 0.216);
+}
+
+dialog {
+  width: 350px;
+  height: 700px;
+  margin: auto;
+  position: fixed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+}
+dialog .formulario {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  background-color: rgba(255, 109, 5, 0.9137254902);
+}
+dialog .formulario .div {
+  padding: 10px 20px;
+}
+dialog .formulario .fieldset {
+  border: none;
+}
+dialog .formulario .fieldset--position {
+  display: flex;
+  flex-direction: column;
+}
+dialog .formulario .fieldset--position .label--dados {
+  padding: 5px 30px;
+}
+dialog .formulario .fieldset--position .label--dados input {
+  height: 25px;
+  border: none;
+}
+dialog .formulario .legend {
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  padding: 5px 30px;
+}
+dialog .formulario .enviar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-left: 50px;
+  background-color: rgb(83, 255, 83);
+  border: none;
+  cursor: pointer;
+}
+dialog .formulario .enviar:hover:hover {
+  border-radius: 5px 15px;
+  transition-duration: 0.3s;
+  background-color: #A52A2A;
+  color: rgb(217, 217, 217);
+  letter-spacing: 0.2em;
+  text-decoration: overline;
+}
+
 main {
   background-color: #A52A2A;
   text-align: center;
@@ -421,47 +484,4 @@ footer .redes .dev {
 }
 footer .redes .dev a {
   color: #fff;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: url(../imagens/academia_00102073.jpg) left no-repeat;
-  background-size: cover;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(6, 6, 6);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.container .formulario {
-  width: 65%;
-  padding: 15px;
-  background-color: rgba(255, 109, 5, 0.9137254902);
-  border: 1px solid black;
-  border-radius: 6px;
-}
-.container .formulario .div {
-  padding-bottom: 15px;
-}
-.container .formulario .fieldset {
-  padding-bottom: 15px;
-  border: 1px solid white;
-}
-.container .formulario .fieldset--position {
-  display: flex;
-  flex-direction: column;
-}
-.container .formulario .fieldset--position .label--dados {
-  padding: 5px 30px;
-}
-.container .formulario .fieldset--position .label--dados input {
-  height: 25px;
-  border: none;
-}
-.container .formulario .legend {
-  font-weight: 600;
-  letter-spacing: 0.2em;
 }/*# sourceMappingURL=style.css.map */

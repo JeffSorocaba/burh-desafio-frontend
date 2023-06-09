@@ -1,10 +1,16 @@
-function cliqueAqui() {
-    document.getElementById("enviar")
+function enviar() {
+	document.getElementById("enviado").innerHTML = 'Cadastro realizado com sucesso!'
 };
 
-function enviar() {
-    document.getElementById("enviado").innerHTML = 'Cadastro realizado com sucesso!'
+
+
+const button = document.querySelector("button")
+const modal = document.querySelector("dialog")
+
+button.onclick = function () {
+	modal.showModal()
 };
+
 
 (() => {
 //If you want to add more images, add the link name and URL image URL in the array list below.
