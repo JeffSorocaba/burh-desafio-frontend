@@ -8,7 +8,7 @@ dialog {
     margin: auto;
     position: fixed;
     font-family: $fontprincpal;
-    background-color: $colorbg-transparencia;
+    background-color: $colorbg-principal;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,6 @@ dialog {
         width: 100%;
         height: 100%;
         padding-top: 20px;
-        background-color: $colorbg-transparencia;
         .position-telas-grandes {
             @media($telasgrandes) {
                 display: flex;
@@ -83,7 +82,7 @@ dialog {
             padding: 10px 20px;
             margin-left: 50px;
             margin-top: 10px;
-            background-color: rgb(83, 255, 83);
+            background-color: $color-button;
             border: none;
             @media($telasgrandes) {
             cursor: pointer;

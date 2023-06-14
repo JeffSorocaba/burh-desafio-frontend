@@ -35,7 +35,7 @@ header .position-nav .overlay {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: #FD6B17;
@@ -54,12 +54,12 @@ header .position-nav .overlay a {
   text-decoration: none;
   font-size: 36px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(6, 6, 6);
+  color: #060606;
   display: block;
   transition: 0.3s;
 }
 header .position-nav .overlay a:hover, header .position-nav .overlay a:focus {
-  color: #f1f1f1;
+  color: #ebebeb;
 }
 header .position-nav .overlay .closebtn {
   position: absolute;
@@ -81,7 +81,7 @@ header .position-nav .overlay .closebtn {
   }
 }
 header .position-nav .a-menu {
-  color: #000;
+  color: #060606;
   font-style: normal;
   font-size: 45px;
   padding-right: 10px;
@@ -95,20 +95,22 @@ header .position-nav .cadastro {
   flex-direction: column;
   position: absolute;
   text-align: center;
+  position: fixed;
+  z-index: 3;
   width: 200px;
-  margin: 50px 20px;
+  top: 14px;
+  right: 55px;
 }
-@media (max-width: 640px) {
+@media (min-width: 641px) {
   header .position-nav .cadastro {
-    margin-top: 2%;
-    margin-right: 60%;
+    margin: 50px 20px;
   }
 }
 header .position-nav .cadastro button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   padding: 10px;
-  background-color: #ff7424;
+  background-color: #FD6B17;
   border: none;
 }
 @media (min-width: 641px) {
@@ -119,7 +121,7 @@ header .position-nav .cadastro button {
     border-radius: 5px 15px;
     transition-duration: 0.3s;
     background-color: #A52A2A;
-    color: rgb(217, 217, 217);
+    color: #ebebeb;
     letter-spacing: 0.2em;
     text-decoration: overline;
   }
@@ -140,16 +142,16 @@ header .position-nav ul {
 header .position-nav ul li {
   width: 125px;
   background-color: rgba(255, 255, 255, 0.3490196078);
-  border-left: solid black 1px;
+  border-left: solid #060606 1px;
 }
 header .position-nav ul li:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #060606;
 }
 header .position-nav ul li a {
   text-decoration: none;
   padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(6, 6, 6);
+  color: #060606;
   font-weight: 200;
   font-size: 18px;
   display: flex;
@@ -166,7 +168,7 @@ dialog {
   margin: auto;
   position: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #ff6d05;
+  background-color: #FD6B17;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +186,6 @@ dialog .formulario {
   width: 100%;
   height: 100%;
   padding-top: 20px;
-  background-color: #ff6d05;
 }
 @media (min-width: 641px) {
   dialog .formulario .position-telas-grandes {
@@ -216,7 +217,7 @@ dialog .formulario .fieldset {
 }
 @media (min-width: 641px) {
   dialog .formulario .fieldset {
-    border: 1px solid rgb(6, 6, 6);
+    border: 1px solid #060606;
     margin-left: 20px;
   }
 }
@@ -249,7 +250,7 @@ dialog .formulario .enviar {
   padding: 10px 20px;
   margin-left: 50px;
   margin-top: 10px;
-  background-color: rgb(83, 255, 83);
+  background-color: #53ff53;
   border: none;
 }
 @media (min-width: 641px) {
@@ -260,7 +261,7 @@ dialog .formulario .enviar {
     border-radius: 5px 15px;
     transition-duration: 0.3s;
     background-color: #A52A2A;
-    color: rgb(217, 217, 217);
+    color: #ebebeb;
     letter-spacing: 0.2em;
     text-decoration: overline;
   }
@@ -277,7 +278,7 @@ main img.logo-main {
 main .conteiner {
   width: 95%;
   margin: auto;
-  background-color: #fff;
+  background-color: #ebebeb;
   display: flex;
   flex-direction: column;
   border-radius: 3px;
@@ -360,16 +361,16 @@ section {
 section h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
-  color: rgb(6, 6, 6);
+  color: #060606;
   font-size: 40px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 300px;
   margin: auto;
-  border-top: 1px solid rgb(26, 26, 26);
+  border-top: 1px solid #1a1a1a;
 }
 
 #hcg-slider-1 {
-  background-color: #fff;
+  background-color: #ebebeb;
   width: 95%;
   height: 600px;
   margin: auto;
@@ -465,17 +466,22 @@ section h3 {
   padding-top: 70px;
   background-color: #A52A2A;
 }
+@media (max-width: 640px) {
+  .position {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .position .instrutores {
-  border-top: 2px solid rgb(26, 26, 26);
+  border-top: 2px solid #1a1a1a;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
-  color: #fff;
+  color: #ebebeb;
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .position .aside1 {
   width: 80%;
-  height: 350px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -486,7 +492,7 @@ section h3 {
   .position .aside1 {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 70%;
     padding-bottom: 20px;
   }
 }
@@ -503,27 +509,21 @@ section h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 90px;
+  left: 70px;
   bottom: 20px;
 }
 .position .aside2 {
   width: 100%;
-  height: 600px;
   margin-top: 70px;
-}
-@media (max-width: 640px) {
-  .position .aside2 {
-    margin-bottom: 1300px;
-  }
 }
 .position .aside2 h4 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
-  color: #eaeaea;
+  color: #ebebeb;
   font-size: 35px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  border-top: 2px solid rgb(26, 26, 26);
-  width: 20%;
+  border-top: 2px solid #1a1a1a;
+  width: 30%;
   margin: auto;
   padding-top: 5px;
 }
@@ -540,13 +540,9 @@ section h3 {
 }
 @media (max-width: 1080px) {
   .position .aside2 .depoimentos-clientes {
+    width: 70%;
+    margin: auto;
     flex-wrap: wrap;
-  }
-}
-@media (max-width: 640px) {
-  .position .aside2 .depoimentos-clientes {
-    flex-direction: column;
-    align-items: center;
   }
 }
 .position .aside2 .depoimentos-clientes .position-p {
@@ -558,14 +554,14 @@ section h3 {
 .position .aside2 .depoimentos-clientes .position-p .p-aside2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: left;
-  color: #e5e5e5;
+  color: #ebebeb;
   font-size: 18px;
 }
 .position .video {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
-  position: relative;
+  padding-top: 60px;
 }
 .position .video iframe {
   box-shadow: 5px 3px 1px rgba(8, 8, 8, 0.5215686275);
@@ -587,8 +583,8 @@ footer {
   }
   footer address {
     padding: 20px;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
   }
 }
 footer .fim {
@@ -599,13 +595,13 @@ footer .fim {
 footer .fim h5 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: left;
-  color: #fff;
+  color: #ebebeb;
   font-size: 30px;
 }
 footer .fim p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: left;
-  color: #fff;
+  color: #ebebeb;
   font-size: 18px;
 }
 footer .redes {
@@ -616,9 +612,9 @@ footer .redes {
 footer .redes .dev {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: left;
-  color: #fff;
+  color: #ebebeb;
   font-size: 18px;
 }
 footer .redes .dev a {
-  color: #fff;
+  color: #ebebeb;
 }/*# sourceMappingURL=style.css.map */

@@ -8,8 +8,8 @@ footer {
         align-items: center;
         address {
             padding: 20px;
-            border-right: 1px solid white;
-            border-left: 1px solid white;
+            border-right: 1px solid $color-white;
+            border-left: 1px solid $color-white;
         }
     }
 
@@ -18,10 +18,10 @@ footer {
         justify-content: space-between;
         margin: 80px 200px;
         h5 {
-            @include Font(left, #fff, 30px, bold)
+            @include Font(left, $color-white, 30px, bold)
         }
         p {
-            @include Font(left, #fff, 18px, bold)
+            @include Font(left, $color-white, 18px, bold)
         }
     }
     .redes {
@@ -29,9 +29,9 @@ footer {
         display: flex;
         flex-wrap: wrap;
         .dev {
-            @include Font(left, #fff, 18px, bold);
+            @include Font(left, $color-white, 18px, bold);
             a {
-                color: #fff;
+                color: $color-white;
             }
         }
     }

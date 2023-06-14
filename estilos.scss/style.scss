@@ -1,9 +1,11 @@
 $colorbg: #A52A2A;
-$font-color: rgb(6, 6, 6);
-$color-top: rgb(26, 26, 26);
-$colorbg-transparencia: #ff6d05;
-$color-paragrafo-responsivo: rgb(217, 217, 217);
-$color-bgc-responsivo: rgba(41, 41, 41, 0.218);
+$colorbg-principal: #FD6B17;
+$color-button: #53ff53;
+$font-color: #060606;
+$color-top: #1a1a1a;
+$colorbg-transparencia: #ff6d058f;
+$color-white: #ebebeb;
+$color-bgc-responsivo: #29292938;
 $width-responsivo: 80%;
 $border-radios-responsivo: 10%;
 $fontprincpal: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,7 +34,7 @@ $telasmedias: "max-width: 1080px";
         border-radius: 5px 15px;
         transition-duration: .3s;
         background-color: $colorbg;
-        color: $color-paragrafo-responsivo;
+        color: $color-white;
         letter-spacing: .2em;
         text-decoration: overline;
     }
@@ -45,4 +47,3 @@ $telasmedias: "max-width: 1080px";
 @import 'section-equp';
 @import 'section-position';
 @import 'footer';
-// @import 'cadastro'
