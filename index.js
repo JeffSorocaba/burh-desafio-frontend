@@ -1,16 +1,22 @@
-function enviar() {
-	document.getElementById("enviado").innerHTML = 'Cadastro realizado com sucesso!'
-};
+const btnCadastro = document.getElementById("btn_cadastro");
+const btnEnviar = document.getElementById("btn_enviar");
+const modal = document.querySelector("dialog");
 
-
-
-const button = document.querySelector("button")
-const modal = document.querySelector("dialog")
-
-button.onclick = function () {
+btnCadastro.onclick = function () {
 	modal.showModal()
 };
 
+btnEnviar.onclick = function () {
+	document.getElementById("enviado").innerHTML = 'Cadastro realizado com sucesso!'
+};
+
+function abrirMenu() {
+	document.getElementById("myNav").style.height = "100%";
+  };
+  
+  function fecharMenu() {
+	document.getElementById("myNav").style.height = "0%";
+  };
 
 (() => {
 //If you want to add more images, add the link name and URL image URL in the array list below.

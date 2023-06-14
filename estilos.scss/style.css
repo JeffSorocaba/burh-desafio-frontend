@@ -21,23 +21,84 @@ header {
   background: blanchedalmond url(../imagens/academia_00102073.jpg) center no-repeat;
   background-size: cover;
 }
-header nav {
+header .position-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-header nav a {
+header .position-nav .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FD6B17;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+header .position-nav .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+header .position-nav .overlay a {
+  padding: 8px;
   text-decoration: none;
-  color: #000;
-  margin-top: 0;
+  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(6, 6, 6);
+  display: block;
+  transition: 0.3s;
 }
-header nav .cadastro {
+header .position-nav .overlay a:hover, header .position-nav .overlay a:focus {
+  color: #f1f1f1;
+}
+header .position-nav .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  header .position-nav .overlay {
+    overflow-y: auto;
+  }
+  header .position-nav .overlay a {
+    font-size: 20px;
+  }
+  header .position-nav .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+header .position-nav .a-menu {
+  color: #000;
+  font-style: normal;
+  font-size: 45px;
+  padding-right: 10px;
+  position: fixed;
+}
+header .position-nav a {
+  text-decoration: none;
+  font-style: italic;
+}
+header .position-nav .cadastro {
   flex-direction: column;
   position: fixed;
   text-align: center;
   width: 200px;
   margin-top: 50px;
 }
-header nav .cadastro button {
+@media (max-width: 640px) {
+  header .position-nav .cadastro {
+    margin-top: -10px;
+    margin-right: 230px;
+  }
+}
+header .position-nav .cadastro button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   padding: 10px;
@@ -45,7 +106,7 @@ header nav .cadastro button {
   border: none;
   cursor: pointer;
 }
-header nav .cadastro button:hover:hover {
+header .position-nav .cadastro button:hover:hover {
   border-radius: 5px 15px;
   transition-duration: 0.3s;
   background-color: #A52A2A;
@@ -53,28 +114,28 @@ header nav .cadastro button:hover:hover {
   letter-spacing: 0.2em;
   text-decoration: overline;
 }
-header nav .logo {
+header .position-nav .logo {
   width: 150px;
 }
 @media (max-width: 640px) {
-  header nav .position-nav {
+  header .position-nav .position-nav {
     display: none;
   }
 }
-header nav ul {
+header .position-nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-header nav ul li {
+header .position-nav ul li {
   width: 130px;
   background-color: rgba(255, 255, 255, 0.3490196078);
   border-left: solid black 1px;
 }
-header nav ul li:hover {
+header .position-nav ul li:hover {
   border-bottom: 1px solid #000;
 }
-header nav ul li a {
+header .position-nav ul li a {
   text-decoration: none;
   padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

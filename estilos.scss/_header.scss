@@ -4,13 +4,65 @@ header {
     height: 100%;
     background: blanchedalmond url(../imagens/academia_00102073.jpg) center no-repeat;
     background-size: cover;
-    nav {
+    .position-nav  {
+        .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        // background-color: $colorbg-transparencia;
+        background-color: #FD6B17;
+        overflow-y: hidden;
+        transition: 0.5s;
+        }
+        .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        }
+        .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        font-family: $fontprincpal;
+        color: $font-color;
+        display: block;
+        transition: 0.3s;
+        }
+        .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+        }
+        .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        }
+        @media screen and (max-height: 450px) {
+        .overlay {overflow-y: auto;}
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+        .a-menu {
+            color: #000;
+            font-style: normal;
+            font-size: 45px;
+            padding-right: 10px;
+            position: fixed;
+        }
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         a {
             text-decoration: none;
-            color: #000;
-            margin-top: 0;
+            font-style: italic;
         }
         .cadastro {
             flex-direction: column;
@@ -18,6 +70,10 @@ header {
             text-align: center;
             width: 200px;
             margin-top: 50px;
+            @media($telaspequenas) {
+                margin-top: -10px;
+                margin-right: 230px;
+            }
             button {
                 font-family: $fontprincpal;
                 font-size: 16px;
