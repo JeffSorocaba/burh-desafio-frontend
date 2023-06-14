@@ -4,6 +4,10 @@ header {
     height: 100%;
     background: blanchedalmond url(../imagens/academia_00102073.jpg) center no-repeat;
     background-size: cover;
+    @media($telaspequenas) {
+        background: blanchedalmond url(../imagens/academia_00102073.jpg) left no-repeat;
+        background-size: cover;
+    }
     .position-nav  {
         .overlay {
         height: 0%;
@@ -66,13 +70,13 @@ header {
         }
         .cadastro {
             flex-direction: column;
-            position: fixed;
+            position: absolute;
             text-align: center;
             width: 200px;
-            margin-top: 50px;
+            margin: 50px 20px;
             @media($telaspequenas) {
-                margin-top: -10px;
-                margin-right: 230px;
+                margin-top: 2%;
+                margin-right: 60%;
             }
             button {
                 font-family: $fontprincpal;
@@ -80,9 +84,11 @@ header {
                 padding: 10px;
                 background-color: #ff7424;
                 border: none;
-                cursor: pointer;
-                &:hover {
+                @media($telasgrandes) {
+                    cursor: pointer;
+                    &:hover {
                     @include hover-effect
+                    }
                 }
             }
         }
@@ -101,7 +107,7 @@ header {
             flex-direction: row;
             list-style: none;
             li {
-                width: 130px;
+                width: 125px;
                 background-color: #ffffff59;
                 border-left: solid black 1px;
                 &:hover {

@@ -21,6 +21,12 @@ header {
   background: blanchedalmond url(../imagens/academia_00102073.jpg) center no-repeat;
   background-size: cover;
 }
+@media (max-width: 640px) {
+  header {
+    background: blanchedalmond url(../imagens/academia_00102073.jpg) left no-repeat;
+    background-size: cover;
+  }
+}
 header .position-nav {
   display: flex;
   justify-content: flex-end;
@@ -87,15 +93,15 @@ header .position-nav a {
 }
 header .position-nav .cadastro {
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 200px;
-  margin-top: 50px;
+  margin: 50px 20px;
 }
 @media (max-width: 640px) {
   header .position-nav .cadastro {
-    margin-top: -10px;
-    margin-right: 230px;
+    margin-top: 2%;
+    margin-right: 60%;
   }
 }
 header .position-nav .cadastro button {
@@ -104,15 +110,19 @@ header .position-nav .cadastro button {
   padding: 10px;
   background-color: #ff7424;
   border: none;
-  cursor: pointer;
 }
-header .position-nav .cadastro button:hover:hover {
-  border-radius: 5px 15px;
-  transition-duration: 0.3s;
-  background-color: #A52A2A;
-  color: rgb(217, 217, 217);
-  letter-spacing: 0.2em;
-  text-decoration: overline;
+@media (min-width: 641px) {
+  header .position-nav .cadastro button {
+    cursor: pointer;
+  }
+  header .position-nav .cadastro button:hover:hover {
+    border-radius: 5px 15px;
+    transition-duration: 0.3s;
+    background-color: #A52A2A;
+    color: rgb(217, 217, 217);
+    letter-spacing: 0.2em;
+    text-decoration: overline;
+  }
 }
 header .position-nav .logo {
   width: 150px;
@@ -128,7 +138,7 @@ header .position-nav ul {
   list-style: none;
 }
 header .position-nav ul li {
-  width: 130px;
+  width: 125px;
   background-color: rgba(255, 255, 255, 0.3490196078);
   border-left: solid black 1px;
 }
@@ -156,6 +166,7 @@ dialog {
   margin: auto;
   position: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ff6d05;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,11 +174,39 @@ dialog {
   border: none;
   border-radius: 6px;
 }
+@media (min-width: 641px) {
+  dialog {
+    width: 800px;
+    height: 400px;
+  }
+}
 dialog .formulario {
   width: 100%;
   height: 100%;
   padding-top: 20px;
-  background-color: rgba(255, 109, 5, 0.9137254902);
+  background-color: #ff6d05;
+}
+@media (min-width: 641px) {
+  dialog .formulario .position-telas-grandes {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 760px) {
+  dialog .formulario .position-telas-grandes {
+    justify-content: center;
+  }
+}
+@media (max-width: 760px) {
+  dialog .formulario .position-telas-grandes .img-760 {
+    display: none;
+  }
+}
+@media (min-width: 641px) {
+  dialog .formulario .div--position {
+    display: flex;
+    flex-direction: row;
+  }
 }
 dialog .formulario .div {
   padding: 10px 20px;
@@ -175,9 +214,21 @@ dialog .formulario .div {
 dialog .formulario .fieldset {
   border: none;
 }
+@media (min-width: 641px) {
+  dialog .formulario .fieldset {
+    border: 1px solid rgb(6, 6, 6);
+    margin-left: 20px;
+  }
+}
 dialog .formulario .fieldset--position {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 640px) {
+  dialog .formulario .fieldset--position .sexo-pcd-contato {
+    display: flex;
+    align-items: center;
+  }
 }
 dialog .formulario .fieldset--position .label--dados {
   padding: 5px 30px;
@@ -185,6 +236,7 @@ dialog .formulario .fieldset--position .label--dados {
 dialog .formulario .fieldset--position .label--dados input {
   height: 25px;
   border: none;
+  border-radius: 3px;
 }
 dialog .formulario .legend {
   font-weight: 600;
@@ -196,17 +248,22 @@ dialog .formulario .enviar {
   font-size: 16px;
   padding: 10px 20px;
   margin-left: 50px;
+  margin-top: 10px;
   background-color: rgb(83, 255, 83);
   border: none;
-  cursor: pointer;
 }
-dialog .formulario .enviar:hover:hover {
-  border-radius: 5px 15px;
-  transition-duration: 0.3s;
-  background-color: #A52A2A;
-  color: rgb(217, 217, 217);
-  letter-spacing: 0.2em;
-  text-decoration: overline;
+@media (min-width: 641px) {
+  dialog .formulario .enviar {
+    cursor: pointer;
+  }
+  dialog .formulario .enviar:hover:hover {
+    border-radius: 5px 15px;
+    transition-duration: 0.3s;
+    background-color: #A52A2A;
+    color: rgb(217, 217, 217);
+    letter-spacing: 0.2em;
+    text-decoration: overline;
+  }
 }
 
 main {
@@ -238,6 +295,12 @@ main .conteiner .text-img {
   font-size: 20px;
   line-height: 1.7em;
 }
+@media (max-width: 1080px) {
+  main .conteiner .text-img {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main .conteiner .text-img .par-serv {
   text-align: left;
 }
@@ -256,6 +319,17 @@ main .conteiner .text-img .par-serv {
 }
 main .conteiner .text-img .unico {
   text-align: right;
+}
+@media (max-width: 1080px) {
+  main .conteiner .reverso {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1080px) {
+  main .conteiner .reverso .unico {
+    text-align: start;
+  }
 }
 @media (max-width: 640px) {
   main .conteiner .reverso {
@@ -408,22 +482,17 @@ section h3 {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (max-width: 640px) {
+@media (max-width: 1080px) {
   .position .aside1 {
-    flex-direction: column;
-    margin-top: 300px;
-    margin-bottom: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 20px;
   }
-  .position .aside1 .img-instrutores {
-    padding: 10px;
-  }
-}
-.position .aside1 .img-instrutores {
-  position: relative;
 }
 .position .aside1 .img-instrutores .personal {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -434,7 +503,6 @@ section h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   left: 90px;
   bottom: 20px;
 }
@@ -470,6 +538,11 @@ section h3 {
   justify-content: space-evenly;
   margin-top: 60px;
 }
+@media (max-width: 1080px) {
+  .position .aside2 .depoimentos-clientes {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 640px) {
   .position .aside2 .depoimentos-clientes {
     flex-direction: column;
@@ -492,6 +565,7 @@ section h3 {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  position: relative;
 }
 .position .video iframe {
   box-shadow: 5px 3px 1px rgba(8, 8, 8, 0.5215686275);
@@ -536,6 +610,8 @@ footer .fim p {
 }
 footer .redes {
   margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
 }
 footer .redes .dev {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

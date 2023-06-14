@@ -26,6 +26,8 @@ footer {
     }
     .redes {
         margin-left: 200px;
+        display: flex;
+        flex-wrap: wrap;
         .dev {
             @include Font(left, #fff, 18px, bold);
             a {

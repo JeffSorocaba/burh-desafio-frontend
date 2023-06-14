@@ -20,7 +20,6 @@ main {
         display: flex;
         flex-direction: column;
         border-radius: 3px;
-
         .text-img {
             width: 90%;
             margin: auto;
@@ -32,6 +31,10 @@ main {
             line-height: 1.7em;
             // border-bottom: solid black 1px;
             // border-left: 1px solid #000;
+            @media($telasmedias) {
+                display: flex;
+                flex-direction: column;
+            }
             .par-serv {
                 text-align: left;
             }
@@ -49,6 +52,17 @@ main {
             }
             .unico {
                 text-align: right;
+            }
+        }
+        .reverso {
+            @media($telasmedias) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .unico {
+                @media($telasmedias) {
+                    text-align: start;
+                }
             }
         }
 

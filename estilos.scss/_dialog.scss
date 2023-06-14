@@ -8,31 +8,67 @@ dialog {
     margin: auto;
     position: fixed;
     font-family: $fontprincpal;
+    background-color: $colorbg-transparencia;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 6px;
+    @media($telasgrandes) {
+        width: 800px;
+        height: 400px;
+    }
     .formulario {
         width: 100%;
         height: 100%;
         padding-top: 20px;
         background-color: $colorbg-transparencia;
+        .position-telas-grandes {
+            @media($telasgrandes) {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            @media(max-width: 760px) {
+                justify-content: center;   
+            }
+            .img-760 {
+                @media(max-width: 760px) {
+                    display: none;
+                }
+            }
+        }
+        .div--position {
+            @media($telasgrandes){
+                display: flex;
+                flex-direction: row;
+            }
+        }
         .div {
             padding: 10px 20px;
         }
         .fieldset {
             border: none;
+            @media($telasgrandes) {
+                border: 1px solid $font-color;
+                margin-left: 20px;
+            }
         }
         .fieldset--position {
             display: flex;
             flex-direction: column;
+            .sexo-pcd-contato {
+                @media($telaspequenas) {
+                    display: flex;
+                    align-items: center;
+                }
+            }
             .label--dados {
                 padding: 5px 30px;
                 input {
                     height: 25px;
                     border: none;
+                    border-radius: 3px;
                 }
             }
         }
@@ -46,11 +82,14 @@ dialog {
             font-size: 16px;
             padding: 10px 20px;
             margin-left: 50px;
+            margin-top: 10px;
             background-color: rgb(83, 255, 83);
             border: none;
+            @media($telasgrandes) {
             cursor: pointer;
             &:hover {
                 @include hover-effect
+            }
             }
         }
     }

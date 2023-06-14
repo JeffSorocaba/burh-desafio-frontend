@@ -1,20 +1,22 @@
 $colorbg: #A52A2A;
 $font-color: rgb(6, 6, 6);
 $color-top: rgb(26, 26, 26);
-$colorbg-transparencia: #ff6d05e9;
+$colorbg-transparencia: #ff6d05;
 $color-paragrafo-responsivo: rgb(217, 217, 217);
 $color-bgc-responsivo: rgba(41, 41, 41, 0.218);
 $width-responsivo: 80%;
 $border-radios-responsivo: 10%;
 $fontprincpal: Verdana, Geneva, Tahoma, sans-serif;
 $telaspequenas: "max-width: 640px";
+$telasgrandes: "min-width: 641px";
+$telasmedias: "max-width: 1080px";
 * {
     margin: 0;
     padding: 0;
 }
 
 .apenas-celular{
-    @media(min-width: 641px) {
+    @media($telasgrandes) {
         display: none !important;   
     }
 }
