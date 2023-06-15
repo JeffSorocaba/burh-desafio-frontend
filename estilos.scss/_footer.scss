@@ -3,6 +3,7 @@ footer {
     background-color: $colorbg;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 
     @media ($telaspequenas) {
         align-items: center;
@@ -25,11 +26,19 @@ footer {
         }
     }
     .redes {
-        margin-left: 200px;
-        display: flex;
-        flex-wrap: wrap;
+        margin: 0 auto;
+        a {
+            margin: 8px;
+            img {
+                width: 60px;
+                @media($telaspequenas) {
+                    width: 40px;
+                }
+            }
+        }
         .dev {
-            @include Font(left, $color-white, 18px, bold);
+            margin-top: 10px;
+            @include Font(center, $color-white, 18px, bold);
             a {
                 color: $color-white;
             }

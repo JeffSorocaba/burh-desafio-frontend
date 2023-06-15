@@ -18,6 +18,29 @@ function abrirMenu() {
 	document.getElementById("myNav").style.height = "0%";
   };
 
+
+
+  // Scroll suave 
+  document.addEventListener('DOMContentLoaded', function() {
+	const smoothScrollLinks = document.getElementsByClassName('smooth-scroll');
+  
+	for (let i = 0; i < smoothScrollLinks.length; i++) {
+	  smoothScrollLinks[i].addEventListener('click', function(event) {
+		event.preventDefault();
+  
+		const target = this.getAttribute('href');
+		const targetElement = document.querySelector(target);
+  
+		if (targetElement) {
+		  targetElement.scrollIntoView({
+			behavior: 'smooth'
+		  });
+		}
+	  });
+	}
+  });  
+
+
 (() => {
 //If you want to add more images, add the link name and URL image URL in the array list below.
 	const images_list = [

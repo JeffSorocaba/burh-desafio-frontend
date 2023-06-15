@@ -7,38 +7,33 @@
     <link rel="stylesheet" href="estilos.scss/style.css">
 </head>
 <body>
-    <header class="menu">
+    <header id="home" class="menu">
         <nav class="position-nav">
-            <!-- <img src="imagens/menu-alt-05-svgrepo-com.svg" alt="icon-menu" width="50px" class="apenas-celular"> -->
-            <a href="#" class="apenas-celular a-menu" onclick="abrirMenu()">&#9776;</a>
+            <a href="#" class="apenas-celular abrir-menu" onclick="abrirMenu()">&#9776;</a>
 
             <div id="myNav" class="overlay apenas-celular">
                 <a href="#" onclick="fecharMenu()">&times;</a>
                 <div class="overlay-content">
-                  <a href="#">home</a>
-                  <a href="#">Serviços</a>
-                  <a href="#">Instrutores</a>
-                  <a href="#">Endereços</a>
-                  <a href="#">Contato</a>
+                  <a href="#home" onclick="fecharMenu()" class="smooth-scroll">Home</a>
+                  <a href="#servico" onclick="fecharMenu()" class="smooth-scroll">Serviços</a>
+                  <a href="#instrutor" onclick="fecharMenu()" class="smooth-scroll">Instrutores</a>
+                  <a href="#equipamento" onclick="fecharMenu()" class="smooth-scroll">Equipamentos</a>
+                  <a href="#contato" onclick="fecharMenu()" class="smooth-scroll">Contato</a>
                 </div>
               </div>
 
-            <!-- <a href="index-cadastro.html"> -->
                 <div class="cadastro">
                     <img src="imagens/Logotipo_de_musculação___Vetor_Premium-removebg-preview.png" alt="Logo" class="logo apenas-desktop">
                     <button id="btn_cadastro">Cadastre-se</button>
                 </div>
-            <!-- </a> -->
-            <!-- <a class="apenas-celular" href="#">MENU CELULAR</a> -->
             <ul class="apenas-desktop">
-                <li><a href="http://127.0.0.1:5501/steller/public_html/index.html">Home</a></li>
-                <li><a href="serviços">Serviços</a></li>
-                <li><a href="instrutores">Instrutores</a></li>
-                <li><a href="endereços">Endereços</a></li>
-                <li><a href="contato">Contato</a></li>
+                <li><a href="#home" class="smooth-scroll">Home</a></li>
+                <li><a href="#servico" class="smooth-scroll">Serviços</a></li>
+                <li><a href="#instrutor" class="smooth-scroll">Instrutores</a></li>
+                <li><a href="#equipamento" class="smooth-scroll">Equipamentos</a></li>
+                <li><a href="#contato"  class="smooth-scroll">Contato</a></li>
             </ul>
         </nav>
-        <!-- <img src="imagens/whatsapp-logo-svgrepo-com.svg" alt="Logo whatsapp" width="150px"> -->
     </header>
     <section>
         <dialog>
@@ -97,11 +92,11 @@
             </form>
         </dialog>
     </section>
-    <main id="serviços" class="principal">
-        <!-- <img src="imagens/Logotipo_de_musculação___Vetor_Premium-removebg-preview.png" alt="Logo" class="logo-main" width="100px"> -->
+    <main id="servico" class="principal">
         <section class="conteiner">
+            <h1 class="servico">Serviços</h1>
             <div class="text-img">
-            <img src="imagens/weightlifting-5730110_1280.jpg" alt="Mulher fazendo musculação" class="img-serv">
+                <img src="imagens/weightlifting-5730110_1280.jpg" alt="Mulher fazendo musculação" class="img-serv">
                 <div class="div-section">
                     <h2 class="subtitle-serv">Musculação</h2>
                     <p class="par-serv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus impedit assumenda deserunt, eveniet quod quae officia consectetur reprehenderit, ipsa velit tenetur id, consequatur maiores laborum quidem at! Debitis, eum optio?</p>
@@ -139,10 +134,8 @@
         </section>
     </main>
 
-    <section class="equipamentos">
+    <section id="equipamento" class="equipamentos">
         <div class="div-section">
-            <!-- <img src="imagens/Gym Equipment Names With Pictures & Descriptions.png" alt="Equipamentos de academia" class="equipamentos-img"> -->
-
             <div id="hcg-slider-1" class="hcg-slider">
                 <h3>Equipamentos</h3>
                 <div class="hcg-slide-container">
@@ -159,7 +152,7 @@
         </div>
     </section>
 
-    <section class="position">
+    <section id="instrutor" class="position">
         <h3 class="instrutores">Instrutores</h3>
         <aside class="aside1">
             <div class="img-instrutores">
@@ -226,7 +219,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contato">
         <div class="fim">
             <address class="endereço">
                 <h5>Endereço</h5>
@@ -244,10 +237,10 @@
         </div>
 
         <div class="redes">
-            <a href="#"><img src="imagens/facebook-icon-logo-svgrepo-com.svg" alt="Logo facebook" width="70px"></a>
-            <a href="#"><img src="imagens/twitter-3-logo-svgrepo-com.svg" alt="Logo twitter" width="70px"></a>
-            <a href="#"><img src="imagens/instagram-2016-logo-svgrepo-com.svg" alt="Logo instagram" width="70px"></a>
-            <a href="#"><img src="imagens/whatsapp-symbol-logo-svgrepo-com.svg" alt="Logo whatsapp" width="70px"></a>
+            <a href="#"><img src="imagens/facebook-icon-logo-svgrepo-com.svg" alt="Logo facebook"></a>
+            <a href="#"><img src="imagens/twitter-3-logo-svgrepo-com.svg" alt="Logo twitter"></a>
+            <a href="#"><img src="imagens/instagram-2016-logo-svgrepo-com.svg" alt="Logo instagram"></a>
+            <a href="#"><img src="imagens/whatsapp-symbol-logo-svgrepo-com.svg" alt="Logo whatsapp"></a>
         <p class="dev">Desenvolvido por <a href="https://jefersonsilvadeveloper.netlify.app/" target="_blank">Jeferson Silva</a></p>
         </div>
     </footer>

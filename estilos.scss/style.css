@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+div, section, article, p, ul {
+  box-sizing: border-box;
+}
+
 @media (min-width: 641px) {
   .apenas-celular {
     display: none !important;
@@ -44,7 +52,7 @@ header .position-nav .overlay {
 }
 header .position-nav .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -80,7 +88,7 @@ header .position-nav .overlay .closebtn {
     right: 35px;
   }
 }
-header .position-nav .a-menu {
+header .position-nav .abrir-menu {
   color: #060606;
   font-style: normal;
   font-size: 45px;
@@ -140,7 +148,6 @@ header .position-nav ul {
   list-style: none;
 }
 header .position-nav ul li {
-  width: 125px;
   background-color: rgba(255, 255, 255, 0.3490196078);
   border-left: solid #060606 1px;
 }
@@ -309,6 +316,7 @@ main .conteiner .text-img .par-serv {
   main .conteiner .text-img {
     flex-direction: column;
     width: 80%;
+    padding: 20px 15px;
   }
   main .conteiner .text-img .img-serv {
     width: 80%;
@@ -576,6 +584,7 @@ footer {
   background-color: #A52A2A;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 @media (max-width: 640px) {
   footer {
@@ -605,13 +614,23 @@ footer .fim p {
   font-size: 18px;
 }
 footer .redes {
-  margin-left: 200px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+}
+footer .redes a {
+  margin: 8px;
+}
+footer .redes a img {
+  width: 60px;
+}
+@media (max-width: 640px) {
+  footer .redes a img {
+    width: 40px;
+  }
 }
 footer .redes .dev {
+  margin-top: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: left;
+  text-align: center;
   color: #ebebeb;
   font-size: 18px;
 }

@@ -21,7 +21,7 @@ header {
         }
         .overlay-content {
         position: relative;
-        top: 25%;
+        top: 15%;
         width: 100%;
         text-align: center;
         margin-top: 30px;
@@ -48,12 +48,12 @@ header {
         .overlay {overflow-y: auto;}
         .overlay a {font-size: 20px}
         .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
         }
-        }
-        .a-menu {
+        .abrir-menu {
             color: $font-color;
             font-style: normal;
             font-size: 45px;
@@ -107,7 +107,6 @@ header {
             flex-direction: row;
             list-style: none;
             li {
-                width: 125px;
                 background-color: #ffffff59;
                 border-left: solid $font-color 1px;
                 &:hover {

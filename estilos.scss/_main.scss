@@ -29,8 +29,6 @@ main {
             flex-direction: row;
             @include Font( justify, rgb(24, 24, 24), 20px, light);
             line-height: 1.7em;
-            // border-bottom: solid black 1px;
-            // border-left: 1px solid #000;
             @media($telasmedias) {
                 display: flex;
                 flex-direction: column;
@@ -42,6 +40,7 @@ main {
             @media ($telaspequenas) {
                 flex-direction: column;
                 width: $width-responsivo;
+                padding: 20px 15px;
                 .img-serv {
                     width: $width-responsivo;
                     border-radius: $border-radios-responsivo;
@@ -85,13 +84,6 @@ main {
             .subtitle-serv {
             padding-bottom: 20px;
             }
-
-            // @media ($telaspequenas) {
-            //     background: url(../imagens/Pink\ Retro\ Neon\ Line\ Dumbbell\ Icon\ by\ dylanxh\ _\ Redbubble.png) center repeat;
-            //     background-attachment: fixed;
-            //     background-size: auto;
-            //     border-radius: 3px;
-            // }
         }
     }
 }
