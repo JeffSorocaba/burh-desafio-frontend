@@ -37,6 +37,9 @@ footer {
                 }
             }
         }
+        img:hover {
+            transform: scale(1.2);
+        }
         .dev {
             margin-top: 10px;
             @include Font(center, $color-white, 18px, bold);

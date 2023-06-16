@@ -134,6 +134,20 @@ header .position-nav .cadastro button {
     text-decoration: overline;
   }
 }
+header .position-nav .zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
 header .position-nav .logo {
   width: 150px;
 }
@@ -366,6 +380,11 @@ main .conteiner .img-serv {
      object-position: top;
   -webkit-clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
           clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
+  transition-duration: 0.5s;
+}
+main .conteiner .img-serv:hover {
+  -webkit-clip-path: polygon(2% 0, 75% 0, 98% 100%, 25% 100%);
+          clip-path: polygon(2% 0, 75% 0, 98% 100%, 25% 100%);
 }
 main .conteiner .div-section {
   padding: 15px;
@@ -492,6 +511,7 @@ section h3 {
   }
 }
 .position .instrutores {
+  margin-bottom: 15px;
   border-top: 2px solid #1a1a1a;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
@@ -530,12 +550,16 @@ section h3 {
   align-items: center;
   left: 70px;
   bottom: 20px;
+  transition-duration: 0.3s;
 }
 .position .aside1 .img-instrutores .img-redes .redes-instrutores {
   width: 35px;
 }
 .position .aside1 .img-instrutores .img-redes .insta {
   width: 45px;
+}
+.position .aside1 .img-instrutores .redes-instrutores:hover {
+  transform: scale(1.2);
 }
 .position .aside2 {
   width: 100%;
@@ -663,6 +687,9 @@ footer .redes a img {
   footer .redes a img {
     width: 40px;
   }
+}
+footer .redes img:hover {
+  transform: scale(1.2);
 }
 footer .redes .dev {
   margin-top: 10px;
