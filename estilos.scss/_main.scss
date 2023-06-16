@@ -1,0 +1,96 @@
+
+@mixin Font($position, $color, $f-s, $f-w) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: $position;
+    color: $color;
+    font-size: $f-s;
+}
+
+main {
+    background-color: $colorbg;
+    text-align: center;
+    padding-bottom: 40px;
+    img.logo-main {
+        margin: 50px;
+    }
+    .conteiner {
+        width: 95%;
+        margin: auto;
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        h1 {
+        @include Font(center, $font-color, 40px, light);
+        }
+        .text-img {
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            @include Font( justify, $font-color, 20px, light);
+            line-height: 1.7em;
+            @media($telasmedias) {
+                display: flex;
+                flex-direction: column;
+            }
+            .par-serv {
+                text-align: left;
+            }
+
+            @media ($telaspequenas) {
+                flex-direction: column;
+                width: $width-responsivo;
+                padding: 20px 15px;
+                .img-serv {
+                    width: $width-responsivo;
+                    border-radius: $border-radios-responsivo;
+                }
+                .unico {
+                    padding-right: 200px;
+                }
+            }
+            .unico {
+                text-align: right;
+            }
+        }
+        .reverso {
+            @media($telasmedias) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .unico {
+                @media($telasmedias) {
+                    text-align: start;
+                }
+            }
+        }
+
+        @media ($telaspequenas) {
+            .reverso {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        .img-serv {
+            width: 50%;
+            padding: 15px;
+            object-fit: cover;
+            object-position: top;
+            clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
+            transition-duration: .5s;
+        }
+        .img-serv:hover {
+            clip-path: polygon(2% 0, 75% 0, 98% 100%, 25% 100%);
+        }
+        .div-section {
+            padding: 15px;
+            .subtitle-serv {
+            padding-bottom: 20px;
+            }
+        }
+    }
+}

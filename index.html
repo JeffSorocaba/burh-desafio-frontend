@@ -1,0 +1,250 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site academia</title>
+    <link rel="stylesheet" href="estilos.scss/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="home" class="menu">
+        <nav class="position-nav">
+            <a href="#" class="apenas-celular abrir-menu" onclick="abrirMenu()">&#9776;</a>
+
+            <div id="myNav" class="overlay apenas-celular">
+                <a href="#" onclick="fecharMenu()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#home" onclick="fecharMenu()" class="smooth-scroll">Home</a>
+                  <a href="#servico" onclick="fecharMenu()" class="smooth-scroll">Serviços</a>
+                  <a href="#instrutor" onclick="fecharMenu()" class="smooth-scroll">Instrutores</a>
+                  <a href="#equipamento" onclick="fecharMenu()" class="smooth-scroll">Equipamentos</a>
+                  <a href="#contato" onclick="fecharMenu()" class="smooth-scroll">Contato</a>
+                </div>
+              </div>
+
+                <div class="cadastro zoomIn">
+                    <img src="imagens/img-logotipo.png" alt="Logo" class="logo apenas-desktop">
+                    <button id="btn_cadastro">Cadastre-se</button>
+                </div>
+            <ul class="apenas-desktop">
+                <li><a href="#home" class="smooth-scroll">Home</a></li>
+                <li><a href="#servico" class="smooth-scroll">Serviços</a></li>
+                <li><a href="#instrutor" class="smooth-scroll">Instrutores</a></li>
+                <li><a href="#equipamento" class="smooth-scroll">Equipamentos</a></li>
+                <li><a href="#contato"  class="smooth-scroll">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <dialog>
+            <form class="formulario">
+                <div class="div div--position">
+                    <h2>Faça aqui seu cadastro</h2>
+                </div>
+                <div class="position-telas-grandes">
+                    <div class="div div--position">
+                        <fieldset class="fieldset fieldset--position">
+                            <legend class="legend">Dados</legend>
+                            <label for="name" class="label--dados">Nome: <br>
+                                <input type="text" id="nome" name="name" placeholder="Primeiro nome">
+                            </label>
+                            <label for="sobrenome" class="label--dados">Sobrenome: <br>
+                                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                            </label>
+                            <label for="idade" class="label--dados">Idade: <br>
+                                <input type="number" id="idade" name="idade" placeholder="Idade">
+                            </label>
+                            <label for="peso" class="label--dados">Peso: <br>
+                                <input type="text" id="peso" name="peso" placeholder="Peso">
+                            </label>
+                            <label for="altura" class="label--dados">Altura: <br>
+                                <input type="number" id="altura" name="altura" placeholder="Altura">
+                            </label>
+                        </fieldset>
+                        <div class="sexo-pcd-contato">
+                            <fieldset class="fieldset">
+                                <legend class="legend">Sexo</legend>
+                                <input type="radio" id="masc" name="sexo"><label for="masc">Masculino</label>
+                                <input type="radio" id="fem" name="sexo"><label for="fem">Feminino</label>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="legend">PCD</legend>
+                                <input type="radio" id="nao" name="pcd"><label for="nao">Não</label>
+                                <input type="radio" id="sim" name="pcd"><label for="sim">Sim</label>
+                            </fieldset>
+                            <fieldset class="fieldset fieldset--position">
+                                <legend class="legend">Contato</legend>
+                                <label for="email" class="label--dados">Email: <br>
+                                    <input type="text" id="email" name="email" placeholder="Email">
+                                </label>
+                                <label for="number" class="label--dados">Telefone: <br>
+                                    <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+                                </label>
+                            </fieldset>
+                            <p id="enviado"></p>
+                            <button id="btn_enviar" class="enviar" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="imagens/img-logotipo.png" alt="Logo Academia" class="img-760 apenas-desktop" width="200px">
+                    </div>
+                </div>
+            </form>
+        </dialog>
+    </section>
+    <main id="servico" class="principal">
+        <section class="conteiner">
+            <h1 class="servico">Serviços</h1>
+            <div class="text-img">
+                <img src="imagens/img-1.jpg" alt="Mulher fazendo musculação" class="img-serv">
+                <div class="div-section">
+                    <h2 class="subtitle-serv">Musculação</h2>
+                    <p class="par-serv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus impedit assumenda deserunt, eveniet quod quae officia consectetur reprehenderit, ipsa velit tenetur id, consequatur maiores laborum quidem at! Debitis, eum optio?</p>
+                    <p class="par-serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ratione impedit enim culpa voluptates doloribus tempora, nihil dolores cumque libero.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="text-img reverso">
+                <div class="div-section">
+                    <h2 class="subtitle-serv unico">Crosfit</h2>
+                    <p class="par-serv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, assumenda, facere sit aliquid, et impedit fugit ipsa nulla sapiente illo aut! Officiis distinctio, voluptas ea eos animi corporis. Pariatur, ullam.</p>
+                    <p class="par-serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ratione impedit enim culpa voluptates doloribus tempora, nihil dolores cumque libero.</p>
+                    <hr>
+                </div>
+                <img src="imagens/img-2.jpg" alt="Homem fazendo crosfit" class="img-serv">
+            </div>
+            <div class="text-img">
+                <img src="imagens/img-3.jpg" alt="Aula de judô" class="img-serv">
+                <div class="div-section">
+                    <h2 class="subtitle-serv">Artes Marciais</h2>
+                    <p class="par-serv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus laborum nemo sapiente similique ut rerum accusamus quis voluptatem omnis cumque, quos illum placeat, enim vitae minima tempora saepe doloremque!</p>
+                    <p class="par-serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ratione impedit enim culpa voluptates doloribus tempora, nihil dolores cumque libero.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="text-img reverso">
+                <div class="div-section">       
+                    <h2 class="subtitle-serv unico">Aeróbica</h2>
+                    <p class="par-serv">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quo aperiam temporibus nemo illum dolor eaque harum! Quos, delectus iusto aut voluptatem, doloremque sint nesciunt, at aliquam maxime voluptatum aliquid!</p>
+                    <p class="par-serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ratione impedit enim culpa voluptates doloribus tempora, nihil dolores cumque libero.</p>
+                    <hr>
+                </div>
+                <img src="imagens/img-4.jpg" alt="Aula aeróbica" class="img-serv">
+            </div>
+        </section>
+    </main>
+
+    <section id="equipamento" class="equipamentos">
+        <div class="div-section">
+            <div id="hcg-slider-1" class="hcg-slider">
+                <h3>Equipamentos</h3>
+                <div class="hcg-slide-container">
+                    <div class="hcg-slider-body">
+                        <a class="hcg-slides animated" style="display:flex">
+                            <span class="hcg-slide-number">1/5</span>
+                            <img src="https://html-generator.com/uploads/images/2023/05/24/938979QGVKZ1P0F.jpg" alt="938979QGVKZ1P0F.jpg">
+                            <span class="hcg-slide-text">938979QGVKZ1P0F.jpg</span>
+                        </a>
+                    </div>
+                </div>
+            <div class="hcg-slide-dot-control"></div>
+            </div>  
+        </div>
+    </section>
+
+    <section id="instrutor" class="position">
+        <h3 class="instrutores">Instrutores</h3>
+        <aside class="aside1">
+            <div class="img-instrutores">
+                <img src="imagens/img-instrutor-1.jpg" alt="personal academia" class="personal">
+                <div class="img-redes">
+                    <a href="#"><img src="imagens/facebook-instrutores.svg" alt="logo face" class="redes-instrutores"></a>
+                    <a href="#"><img src="imagens/instagram-instrutores.svg" alt="logo-instagram" class="redes-instrutores insta"></a>
+                    <a href="#"><img src="imagens/whatsapp-instrutores.svg" alt="logo-whatsapp" class="redes-instrutores"></a>
+                </div>
+            </div>
+            <div class="img-instrutores">
+                <img src="imagens/img-instrutor-2.jpg" alt="personal academia" class="personal">
+                <div class="img-redes">
+                    <a href="#"><img src="imagens/facebook-instrutores.svg" alt="logo face" class="redes-instrutores"></a>
+                    <a href="#"><img src="imagens/instagram-instrutores.svg" alt="logo-instagram" class="redes-instrutores insta"></a>
+                    <a href="#"><img src="imagens/whatsapp-instrutores.svg" alt="logo-whatsapp" class="redes-instrutores"></a>
+                </div>
+            </div>
+            <div id="instrutores" class="img-instrutores">
+                <img src="imagens/img-instrutor-3.jpg" alt="personal academia" class="personal">
+                <div class="img-redes">
+                    <a href="#"><img src="imagens/facebook-instrutores.svg" alt="logo face" class="redes-instrutores"></a>
+                    <a href="#"><img src="imagens/instagram-instrutores.svg" alt="logo-instagram" class="redes-instrutores insta"></a>
+                    <a href="#"><img src="imagens/whatsapp-instrutores.svg" alt="logo-whatsapp"  class="redes-instrutores"></a>
+                </div>
+            </div>
+        </aside>
+        <aside class="aside2">
+            <h4>Depoimentos</h4>
+            <div class="depoimentos-clientes">
+                <div class="position-p">
+                    <img src="imagens/img-depoimento-1.jpg" alt="pessoas" width="200px" height="200px" class="depoimentos-img">
+                    <p class="p-aside2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis dolorem totam iure explicabo, nihil aliquam recusandae ipsa nesciunt commodi?</p>
+                    <img src="imagens/img-cinco-estrelas.png" alt="5 estrelas google" width="150px" class="img-aside2">
+                </div>
+                <div class="position-p">
+                    <img src="imagens/img-depoimento-2.jpg" alt="pessoas" class="depoimentos-img">
+                    <p class="p-aside2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis dolorem totam iure explicabo, nihil aliquam recusandae ipsa nesciunt commodi?</p>
+                    <img src="imagens/img-cinco-estrelas.png" alt="5 estrelas google" width="150px" class="img-aside2">
+                </div>
+                
+                <div class="position-p">
+                    <img src="imagens/img-depoimento-3.jpg" alt="pessoas" width="200px" class="depoimentos-img">
+                    <p class="p-aside2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis dolorem totam iure explicabo, nihil aliquam recusandae ipsa nesciunt commodi?</p>
+                    <img src="imagens/img-cinco-estrelas.png" alt="5 estrelas google" width="150px" class="img-aside2">
+                </div>
+                <div class="position-p">
+                    <img src="imagens/img-depoimento-4.jpg" alt="pessoas" width="200px" class="depoimentos-img">
+                    <p class="p-aside2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis dolorem totam iure explicabo, nihil aliquam recusandae ipsa nesciunt commodi?</p>
+                    <img src="imagens/img-cinco-estrelas.png" alt="5 estrelas google" width="150px" class="img-aside2">
+                </div>
+                <div class="position-p">
+                    <img src="imagens/img-depoimento5.jpg" alt="pessoas" width="200px" class="depoimentos-img">
+                    <p class="p-aside2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis dolorem totam iure explicabo, nihil aliquam recusandae ipsa nesciunt commodi?</p>
+                    <img src="imagens/img-cinco-estrelas.png" alt="5 estrelas google" width="150px" class="img-aside2">
+                </div>
+            </div>
+        </aside>
+        <div class="video">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/Fo1n217fnn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7324.085377472222!2d-47.47883830000003!3d-23.386672899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1685127014622!5m2!1spt-PT!2sbr" width="960" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="fim">
+            <address>
+                <h5>Endereço</h5>
+                <p>Rua: Padre Emílio Lívio Calliari</p>
+                <p>Bairro: Iporanga</p>
+                <p>Cidade: Sorocaba-SP</p>
+            </address><hr class="apenas-celular">
+            <address>
+                <h5>Contato</h5>
+                <p>Telefone: (15) 3236-1010</p>
+                <p>Celular: (15) 98808-1010</p>
+                <p>email: academia@gmail.com</p>
+            </address>
+        </div>
+
+        <div class="redes">
+            <a href="#"><img src="imagens/facebook-footer.svg" alt="Logo facebook"></a>
+            <a href="#"><img src="imagens/twitter-footer.svg" alt="Logo twitter"></a>
+            <a href="#"><img src="imagens/instagram-footer.svg" alt="Logo instagram"></a>
+            <a href="#"><img src="imagens/whatsapp-footer.svg" alt="Logo whatsapp"></a>
+        <p class="dev">Desenvolvido por <a href="https://jefersonsilvadeveloper.netlify.app/" target="_blank">Jeferson Silva</a></p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

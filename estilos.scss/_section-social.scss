@@ -1,0 +1,119 @@
+
+
+.position {
+    padding-top: 70px;
+    background-color: $colorbg;
+    @media ($telaspequenas) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .instrutores {
+        margin-bottom: 15px;
+        border-top: 2px solid $color-top;
+        @include Font(center, $color-white, 50px, light);
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .aside1 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    @media($telasmedias) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        padding-bottom: 20px;
+    }
+    .img-instrutores {
+        .personal {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .img-redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 70px;
+            bottom: 20px;
+            transition-duration: .3s;
+            .redes-instrutores {
+                width: 35px;
+            }
+            .insta {
+                width: 45px;
+            }
+        }
+        .redes-instrutores:hover {
+            transform: scale(1.2);
+        }
+    }
+    }
+    .aside2 {
+        width: 100%;
+        margin-top: 70px;
+        h4 {
+        @include Font(center, $color-white, 35px, light);
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-top: 2px solid $color-top;
+        width: 30%;
+        margin: auto;
+        padding-top: 5px;
+
+            @media ($telaspequenas) {
+                width: 50%;
+            }
+
+        }
+        .depoimentos-clientes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 60px;
+            @media($telasmedias) {
+                width: 70%;
+                margin: auto;
+                flex-wrap: wrap;
+            }
+            .position-p {
+                width: 200px;
+                .depoimentos-img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                .p-aside2 {
+                    @include Font(left, $color-white, 18px, bold)
+                }
+            }
+        }
+    }
+    .video {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        padding-top: 60px;
+        iframe {
+            box-shadow: 5px 3px 1px #08080885;
+            @media($telasmedias) {
+                width: 850px;
+                height: 450px;
+            }
+            @media($telaspequenas) {
+                height: 350px;
+            }
+        }
+    }
+    .mapa {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,58 @@
+$colorbg: #A52A2A;
+$colorbg-principal: #FD6B17;
+$color-button: #53ff53;
+$font-color: #060606;
+$color-top: #1a1a1a;
+$colorbg-transparencia: #ff6d058f;
+$color-white: #ebebeb;
+$color-bgc-responsivo: #29292938;
+$width-responsivo: 80%;
+$border-radios-responsivo: 10%;
+$fontprincpal: Verdana, Geneva, Tahoma, sans-serif;
+$telaspequenas: "max-width: 640px";
+$telasgrandes: "min-width: 641px";
+$telasmedias: "max-width: 1080px";
+* {
+    margin: 0;
+    padding: 0;
+    // outline: 1px solid red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div, section, article, h1, p, ul {
+    box-sizing: border-box;
+}
+
+.apenas-celular{
+    @media($telasgrandes) {
+        display: none !important;   
+    }
+}
+
+.apenas-desktop{
+    @media($telaspequenas) {
+        display: none !important;   
+    }
+}
+
+@mixin hover-effect {
+    &:hover {
+        border-radius: 5px 15px;
+        transition-duration: .3s;
+        background-color: $colorbg;
+        color: $color-white;
+        letter-spacing: .2em;
+        text-decoration: overline;
+    }
+}
+  
+
+@import 'header';
+@import 'dialog';
+@import 'main';
+@import 'section-equp';
+@import 'section-social';
+@import 'footer';
