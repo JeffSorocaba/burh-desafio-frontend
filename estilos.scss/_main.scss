@@ -20,6 +20,9 @@ main {
         display: flex;
         flex-direction: column;
         border-radius: 3px;
+        h1 {
+        @include Font(center, $font-color, 40px, light);
+        }
         .text-img {
             width: 90%;
             margin: auto;
@@ -27,7 +30,7 @@ main {
             padding: 50px;
             display: flex;
             flex-direction: row;
-            @include Font( justify, rgb(24, 24, 24), 20px, light);
+            @include Font( justify, $font-color, 20px, light);
             line-height: 1.7em;
             @media($telasmedias) {
                 display: flex;

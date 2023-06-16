@@ -40,6 +40,12 @@
             align-items: center;
             left: 70px;
             bottom: 20px;
+            .redes-instrutores {
+                width: 35px;
+            }
+            .insta {
+                width: 45px;
+            }
         }
     }
     }
@@ -72,7 +78,11 @@
             .position-p {
                 width: 200px;
                 .depoimentos-img {
+                    width: 200px;
+                    height: 200px;
                     border-radius: 30px;
+                    object-fit: cover;
+                    object-position: top;
                 }
                 .p-aside2 {
                     @include Font(left, $color-white, 18px, bold)
@@ -87,6 +97,13 @@
         padding-top: 60px;
         iframe {
             box-shadow: 5px 3px 1px #08080885;
+            @media($telasmedias) {
+                width: 850px;
+                height: 450px;
+            }
+            @media($telaspequenas) {
+                height: 350px;
+            }
         }
     }
     .mapa {

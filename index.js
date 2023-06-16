@@ -7,7 +7,7 @@ btnCadastro.onclick = function () {
 };
 
 btnEnviar.onclick = function () {
-	document.getElementById("enviado").innerHTML = 'Cadastro realizado com sucesso!'
+	document.getElementById("enviado").innerHTML = 'Cadastro enviado!'
 };
 
 function abrirMenu() {

@@ -76,11 +76,16 @@ dialog {
             letter-spacing: .2em;
             padding: 5px 30px;
         }
+        #enviado {
+            padding-top: 5px;
+            padding-left: 60px;
+            font-style: italic;
+        }
         .enviar {
             font-family: $fontprincpal;
             font-size: 16px;
             padding: 10px 20px;
-            margin-left: 50px;
+            margin-left: 90px;
             margin-top: 10px;
             background-color: $color-button;
             border: none;
