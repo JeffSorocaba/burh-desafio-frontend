@@ -6,8 +6,10 @@ btnCadastro.onclick = function () {
 	modal.showModal()
 };
 
-btnEnviar.onclick = function () {
-	document.getElementById("enviado").innerText = 'Cadastro enviado!'
+btnEnviar.onclick = function (event) {
+	event.preventDefault();
+	document.getElementById("enviado").innerText = 'Cadastro enviado!';
+	return false;
 };
 
 function abrirMenu() {
