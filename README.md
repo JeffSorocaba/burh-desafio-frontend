@@ -9,7 +9,7 @@ Teste feito por mim para a empresa BURH onde o objetivo era construir a estrutur
 - Contém algumas de básicas de JavaScript
 
 ## Acessar o projeto 
-https://648c972d946d95353b2a1147--cerulean-malabi-097820.netlify.app/
+https://tranquil-rabanadas-b7cc82.netlify.app/
 
 ## Rodar o projeto
 - 1-clone projeto
