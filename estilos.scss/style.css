@@ -94,6 +94,7 @@ header .position-nav .abrir-menu {
   font-size: 45px;
   padding-right: 10px;
   position: fixed;
+  z-index: 5;
 }
 header .position-nav a {
   text-decoration: none;
@@ -382,14 +383,10 @@ main .conteiner .img-serv {
           clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
   transition-duration: 0.5s;
 }
-main .conteiner .img-serv:hover {
-  -webkit-clip-path: polygon(2% 0, 75% 0, 98% 100%, 25% 100%);
-          clip-path: polygon(2% 0, 75% 0, 98% 100%, 25% 100%);
-}
-main .conteiner .div-section {
+main .div-section {
   padding: 15px;
 }
-main .conteiner .div-section .subtitle-serv {
+main .div-section .subtitle-serv {
   padding-bottom: 20px;
 }
 

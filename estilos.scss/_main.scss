@@ -83,8 +83,6 @@ main {
             clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 2% 100%);
             transition-duration: .5s;
         }
-        .img-serv:hover {
-            clip-path: polygon(2% 0, 75% 0, 98% 100%, 25% 100%);
         }
         .div-section {
             padding: 15px;
@@ -93,4 +91,3 @@ main {
             }
         }
     }
-}

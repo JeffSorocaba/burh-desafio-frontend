@@ -132,3 +132,5 @@ function abrirMenu() {
 	}, 2000);
 
 })();
+
+AOS.init();
